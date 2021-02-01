@@ -250,10 +250,12 @@ ol, ul{
 }
 
 
-.social-icon i{
-    height: 2rem;
-    width: 2rem;
-    size: 2rem;
+.social-icon a,i{
+    height: 2.5rem;
+    width: 2.5rem;
+    size: 2.5rem;
+    color: #000000;
+    text-decoration: none;
     display: inline-flex;
     justify-content: space-between;
 }
@@ -931,7 +933,7 @@ X
     align-items: center;
 
 }
-.foot-icon img{
+.foot-icon a{
     margin: 2%;
     /* padding: 5%; */
 
