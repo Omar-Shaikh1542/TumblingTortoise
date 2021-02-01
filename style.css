@@ -36,7 +36,9 @@ ol, ul{
     text-align: center;
     justify-content: center;
     align-items: center;
+
 }
+
 .nav-small-frame{
     display: flex;
     padding-right: 0%;
@@ -45,6 +47,8 @@ ol, ul{
     justify-content: center;
     align-self: baseline;
     z-index: 1;
+
+    
 }
 .nav-toggle{
 
@@ -68,7 +72,7 @@ ol, ul{
 }
 .nav-toggle:hover ul{
     display: block;
-    background-color: #0200008c;
+    background-color: #000000;
     
 }
 .dropdown-content li{
@@ -108,9 +112,9 @@ ol, ul{
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    width: 100vw;
+    width: 95vw;
    
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px rgb(0, 0, 0);
     z-index: 1;
     
 }
@@ -125,7 +129,7 @@ ol, ul{
     font-size: 18px;
     /* border: 1px solid transparent; */
     /* border-radius: 50px; */
-    color: aliceblue;
+    color: rgb(215, 238, 238);
     transition: 0.5s;
     text-decoration: none;
     
@@ -143,30 +147,29 @@ ol, ul{
     /* text-align: center; */
     padding-top: 15%;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
     
 }
 
 
 /* ====================side frame============== */
-/* .outer-frame{
-    padding-left: 0%;
-    width: 100%;
+.outer-frame{
+    /* padding: 5%; */
+    /* width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("pics/anders-jilden-5sxQH0ugTaA-unsplash.jpg");
-} */
+    /* background-image: url("pics/anders-jilden-5sxQH0ugTaA-unsplash.jpg"); */
+}
  
 .second-frame{
-    height: 85%;
-    width: 79.5vw;
-    margin: 2% auto;
-    margin-right: 3%;
+    /* height: 85%; */
+    /* width: 79.5vw; */
+    /* margin: 2% auto; */
     display: inline-flex;
     justify-content: center;
     background: transparent;
-    box-shadow: 1px 1px 22px black;
+    /* box-shadow: 1px 1px 22px black; */
 
 }
 
@@ -175,14 +178,13 @@ ol, ul{
 .third-frame{
  
     margin: 5% auto;
-    background-color: #d7f9ff;
-    background-image: url("pics/juniperphoton-n7W7HFuOoaU-unsplash.jpg");
-    box-shadow: 2px 2px 22px black;
+    background-color: transparent;
+    /* background-image: url("pics/anders-jilden-5sxQH0ugTaA-unsplash.jpg"); */
     /* background-position: center center; */
-   /* background-size: cover; */
-   /* background-attachment: fixed; */
-   background-repeat: no-repeat;
-
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    /* background-repeat: no-repeat; */
+    
 }
 
 .fourth-frame{
@@ -190,6 +192,7 @@ ol, ul{
     width: 55vw;
     margin: 2% auto;
     background-color: transparent;
+    /* box-shadow: 2px 2px 22px black; */
     display: flex;
     align-items: center;
     text-align: center;
@@ -200,8 +203,13 @@ ol, ul{
 .title{
     display: flex;
     flex-shrink: 1;
-}
 
+}
+.title h1{
+    font-size: 5rem;
+    font-weight: 400;
+
+}
 .name{
     font-size: 4rem;
     display: flex;
@@ -229,7 +237,7 @@ ol, ul{
     .title h1{
         display: flex;
         flex-wrap: wrap;
-        font-size: 2rem;
+        /* font-size: 2rem; */
         
     }
 }
@@ -242,11 +250,20 @@ ol, ul{
 }
 .sub-title h4{
   
-    font-size: medium;    
+    font-size: large;    
     color: #000000a6;
 
 
 
+}
+@media screen and (max-width: 450px){
+    .sub-title h4{
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: 100;
+        font-size: 15px;
+        
+    }
 }
 
 
@@ -278,10 +295,9 @@ ol, ul{
    background-repeat: no-repeat;
    scroll-behavior: smooth;
    /* scroll-behavior: ; */
-   
-   border-right: 15px solid #000000;
-   border-bottom: 20px solid #000000;
-   border-top: 20px solid #000000;
+   border-top: 15px solid black;
+   border-bottom: 15px solid black;
+  
 }
 .pic-frame{
     padding: 25%;
@@ -314,6 +330,8 @@ ol, ul{
     text-align: center;
     margin: 5%;
 }
+
+
 .pic-title-span{
     
     color: #ffe91f;
@@ -336,9 +354,8 @@ ol, ul{
     background-color: #010511;
     scroll-behavior: smooth;
     
-    border-top: 20px solid #000000;
-    border-bottom: 20px solid #000000;
-    border-left: 15px solid #000000;
+    border: 15px solid #000000;
+  
     background-repeat: no-repeat;
     
     display:flex;
@@ -479,7 +496,7 @@ X
     overflow-x: hidden;
     padding: 3%;
     background-image: url("pics/adrien-fu-92gSSPN8Wus-unsplash.jpg");
-    color: #61e9e9;
+    color: #000000;
     background-size: cover;
     background-attachment:fixed;
     background-position: center center;
@@ -511,7 +528,7 @@ X
 
 }
 .dev{
-    margin: 8%;
+    margin: 4%;
     padding: 1% 5% 1% 5%;
     display: flex;
     align-items: center;
@@ -520,27 +537,49 @@ X
     box-shadow: 0px 0px 35px black; 
 }
 
-.devr:hover{
+/* .ddvr:hover{
     text-align: center; 
     display: flex;
+    flex-wrap: wrap;
     align-items: center; 
     display: flex;
     align-items: center; 
     animation: 2s mydivr ease both;
-}
-.devl:hover{
+} */
+.dev:hover{
+    
+    
     
     text-align: center; 
     display: flex;
+    flex-wrap: wrap;
     align-items: center; 
     animation: 2s mydivl ease both;
 }
-
+.dev h4{
+    font-size: 1rem;
+}
+@media screen and (max-width: 575px){
+    .dev h4{
+        font-size: small;
+    }
+}
+@media screen and (max-width: 355px){
+    .dev h4{
+        font-size: smaller;
+    }
+}
 
 .dev-info{
     transition: 5s;
     font-size: 0px;
     display: none;
+}
+
+@media screen and (max-width: 730px){
+    .dev-info p{
+        font-size: small;
+    }
 }
 
 .dev:hover .dev-info{
@@ -584,11 +623,13 @@ X
     padding: 2%;
     background-color: #080204;
     scroll-behavior: smooth;
-
+    margin-left: 0;
+    margin-right: 0;
 }  
 
 .skill-title{
-    padding: 8%;
+    padding: 2%;
+    /* margin: 2%; */
     border-right: 2px solid rgb(253, 237, 17);
    
 
@@ -608,18 +649,23 @@ X
     text-align: center;
     color:  rgb(255, 182, 182);
     font-weight: 400;
-
+    /* font-size: 1rem; */
 }
-
+@media screen and (max-width: 370px){
+    .skill-title h1{
+        font-size: 1rem;
+    }
+}
 
 .skill-frame{
- 
-    padding: 3%;
+    /* padding-left: 0%;
+    padding-right: 0%; */
+    padding: 0%;
 }
 .rows{
-    padding: 1%;
+    padding: 0%;
 
-
+    /* margin: 0%; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -638,15 +684,30 @@ X
 @media screen and (max-width: 440px){
     .rows img{
         padding: 4%;
-        height: 120px;
-        width: 120px;
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .rows img{
+        padding: 4%;
+        height: 60px;
+        width: 60px;
+    }
+}
+@media screen and (max-width: 270px){
+    .rows img{
+        padding: 4%;
+        height: 50px;
+        width: 50px;
     }
 }
 .rows img:hover{
    
     animation: 2s iconlarge linear infinite;
 }
-/* ============== INTERESTS =========== */
+/* ========================= INTERESTS ====================== */
 .interests{
     background-color: #cde2e0;
     scroll-behavior: smooth;
@@ -654,7 +715,7 @@ X
 }
 .interest-title{
     padding: 5%;
-    padding-bottom: 2%;
+    /* padding-bottom: 2%; */
     /* margin: 5%; */
     /* display: flex;
     flex-wrap: wrap;
@@ -706,13 +767,26 @@ X
 .interest-info{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     padding: 3%;
     
 }
+
+.card-music{
+    transform: translateX(-3%);
+}
+
+@media screen and (max-width: 400px){
+    .card-music{
+        transform: translateX(-2%);
+
+    }
+}
 .int-card{
     margin: 3%;
+    /* margin-left: 0%; */
+    /* margin-right: 0%; */
     border-style: none;
     box-shadow: 0px 0px 25px rgb(0, 0, 0);
     background-color: #000000;
@@ -738,7 +812,7 @@ X
 
 .int-image img{
     /* width: 100%; */
-    border-radius: 1%;
+    /* border-radius: 1%; */
     height: 100%;
     width: 100%;
     
@@ -965,6 +1039,7 @@ X
         
     } 
     100%{
+        border-radius: 15%;
         padding: 5% 7% 5% 7%;
         
     }
