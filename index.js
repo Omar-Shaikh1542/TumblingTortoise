@@ -1,13 +1,21 @@
-// var i_quote = document.getElementById("i-quote");
-// var ii_quote = document.getElementById("ii-quote");
-// var iii_quote = document.getElementById("iii-quote");
+var read = document.getElementById("info-read");
+var readmore = document.getElementById("info-read-more");
+var readless = document.getElementById("info-read-less");
 
-// i_quote.addEventListener("click", carousel);
+readmore.addEventListener("click", showRead);
+readless.addEventListener("click", hideRead);
 
-// function carousel(){
-//     i_quote.style.transitionDelay= "4s";
-//     i_quote.style.transitionDuration= "3s";
-//     // i_quote.style.marginLeft = "1000%";
-//     i_quote.style.color = "transparent";
+readless.style.display = "block";
+readmore.style.display = "none";
 
-// }
+function showRead(){
+    read.style.display = "block";
+    readmore.style.display = "none";
+    readless.style.display = "block";
+}
+
+function hideRead(){
+    readless.style.display = "none";
+    read.style.display = "none";
+    readmore.style.display = "block";
+}

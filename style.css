@@ -348,6 +348,12 @@ ol, ul{
 
     color: #f56c71;
 }
+@media screen and (min-width: 1900px){
+    .pic-sub-title{
+        font-size: 2rem;
+    }
+
+}
 /* ================== */
 .info{
     padding-left: 0px;
@@ -384,19 +390,31 @@ ol, ul{
     margin-left: 2%;
     padding: 4% 5% 0% 5%;
 }
-
-@media screen and (max-width: 940px){
-    .info-section span.read-more{
-        display: none;
+/*  */
+@media screen and (min-width: 1900px){
+    .info-section p{
+        font-size: 2rem;
     }
 
 }
-@media screen and (min-width: 940px){
-    .info-section span.read a{
+/* @media screen and (max-width: 1000px){
+    .info-section span.read{
+        display: none;
+    }
+
+} */
+/* @media screen and (min-width: 940px){
+    .info-section span.read-more a{
         display:none;
     }
 
 }
+@media screen and (min-width: 940px){
+    .info-section span.read-less a{
+        display:none;
+    }
+
+} */
 .info-contact{
     display: block;
     margin:5%;
