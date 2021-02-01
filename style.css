@@ -208,7 +208,7 @@ ol, ul{
 .title h1{
     font-size: 5rem;
     font-weight: 400;
-
+    margin-bottom: 8%;
 }
 .name{
     font-size: 4rem;
@@ -221,11 +221,12 @@ ol, ul{
     font-style: normal;
     font-weight: 600;
     color: black;
-
+    /* padding-bottom: 5%; */
 
 
 }
-@media screen and (max-width: 650px){
+
+@media screen and (max-width: 540px){
     .title h1{
         display: flex;
         flex-wrap: wrap;
