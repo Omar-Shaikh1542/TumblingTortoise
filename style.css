@@ -21,7 +21,7 @@ ol, ul{
     list-style: none;
 
 }
-.head{
+.heading{
    
     background-image: url("pics/anders-jilden-5sxQH0ugTaA-unsplash.jpg");
     
@@ -807,7 +807,7 @@ X
     justify-content: space-evenly;
     align-items: center;
     padding: 3%;
-    
+    background-attachment: ;
 }
 
 .card-music{
